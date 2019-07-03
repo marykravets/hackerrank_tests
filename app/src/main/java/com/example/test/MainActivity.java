@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
         //hackerrank tests
         int val1 = countingValleys(10, "UDUUUDUDDD");
-        int val2 = sockMerchant(10, new int[] {1,2,3,2,1,4,6,5,4,1});
+        int val2 = sockMerchant(10, new int[] {1, 2, 3, 2, 1, 4, 6, 5, 4, 1});
         int val3 = jumpingOnClouds(new int[] {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0});
     }
 
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static int countingValleys(int n, String s) {
-
         int seaLevel = 0, count = 0;
         for (int i = 0; i < n; i++) {
 
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 if (seaLevel == 0) {
                     count++;
                 }
-
                 seaLevel--;
             }
         }
