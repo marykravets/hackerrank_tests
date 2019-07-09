@@ -80,19 +80,30 @@ class OrgChartTestActivityKt: AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
 
-        mEmployeeList.add(Employee("0", "Employee0", "-1"))
-        mEmployeeList.add(Employee("10", "Employee10", "0"))
-        mEmployeeList.add(Employee("11", "Employee11", "0"))
-        mEmployeeList.add(Employee("12", "Employee12", "10"))
-        mEmployeeList.add(Employee("13", "Employee13", "10"))
-        mEmployeeList.add(Employee("14", "Employee14", "12"))
+        val start = System.currentTimeMillis()
 
-        mEmployeeList.add(Employee("15", "Employee15", "-1"))
-        mEmployeeList.add(Employee("22", "Employee22", "15"))
-        mEmployeeList.add(Employee("23", "Employee23", "-1"))
-        mEmployeeList.add(Employee("24", "Employee24", "23"))
-        mEmployeeList.add(Employee("25", "Employee25", "23"))
-        print()
+        for (i in 0 until 100) {
+            add("0", "Employee0", "-1")
+            add("10", "Employee10", "0")
+            add("11", "Employee11", "0")
+            add("12", "Employee12", "10")
+            add("13", "Employee13", "10")
+            add("14", "Employee14", "12")
+
+            add("15", "Employee15", "-1")
+            add("22", "Employee22", "15")
+            add("23", "Employee23", "-1")
+            add("24", "Employee24", "23")
+            add("25", "Employee25", "23")
+            //print()
+            Log.d("=test=", "count = " + count("10"))
+            move("24", "0")
+            remove("14")
+        }
+
+        print();
+        val end  = System.currentTimeMillis()
+        Log.d("=test=", "time = "+(end - start))
 
         //Employee0
         //  Employee10

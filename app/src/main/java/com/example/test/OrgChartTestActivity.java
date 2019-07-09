@@ -109,19 +109,30 @@ public class OrgChartTestActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
 
-        mEmployeeList.add(new Employee("0","Employee0", "-1"));
-        mEmployeeList.add(new Employee("10","Employee10", "0"));
-        mEmployeeList.add(new Employee("11","Employee11", "0"));
-        mEmployeeList.add(new Employee("12","Employee12", "10"));
-        mEmployeeList.add(new Employee("13","Employee13", "10"));
-        mEmployeeList.add(new Employee("14","Employee14", "12"));
+        long start = System.currentTimeMillis();
 
-        mEmployeeList.add(new Employee("15","Employee15", "-1"));
-        mEmployeeList.add(new Employee("22","Employee22", "15"));
-        mEmployeeList.add(new Employee("23","Employee23", "-1"));
-        mEmployeeList.add(new Employee("24","Employee24", "23"));
-        mEmployeeList.add(new Employee("25","Employee25", "23"));
+        for (int i = 0; i <= 100; i++){
+            add("0", "Employee0", "-1");
+            add("10", "Employee10", "0");
+            add("11", "Employee11", "0");
+            add("12", "Employee12", "10");
+            add("13", "Employee13", "10");
+            add("14", "Employee14", "12");
+
+            add("15", "Employee15", "-1");
+            add("22", "Employee22", "15");
+            add("23", "Employee23", "-1");
+            add("24", "Employee24", "23");
+            add("25", "Employee25", "23");
+            //print();
+            Log.d("=test=", "count = " + count("10"));
+            move("24", "0");
+            remove("14");
+        }
+
         print();
+        long end  = System.currentTimeMillis();
+        Log.d("=test=", "time = "+(end - start));
 
         //Employee0
         //  Employee10

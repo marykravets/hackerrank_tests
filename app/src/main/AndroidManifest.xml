@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".OrgChartTestActivity" android:exported="true" />
+        <activity android:name=".OrgChartTestActivityKt" android:exported="true" />
     </application>
 
 </manifest>
