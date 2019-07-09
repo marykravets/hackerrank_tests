@@ -45,6 +45,9 @@ public class EmployeeJava {
 
     public EmployeeJava() {
 
+    }
+
+    public void runTest() {
         long start = System.currentTimeMillis();
 
         for (int i = 0; i <= 100; i++){

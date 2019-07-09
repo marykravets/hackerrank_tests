@@ -9,6 +9,6 @@ class OrgChartTestActivityKt: AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
 
-        EmployeeKotlin()
+        EmployeeKotlin().runTest()
     }
 }

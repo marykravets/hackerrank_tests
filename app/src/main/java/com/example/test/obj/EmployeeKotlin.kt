@@ -21,6 +21,10 @@ open class EmployeeKotlin {
     private inner class Employee(val id: String, val name: String, var managerId: String?)
 
     constructor() {
+
+    }
+
+    open fun runTest() {
         val start = System.currentTimeMillis()
 
         for (i in 0 until 100) {

@@ -9,6 +9,6 @@ public class OrgChartTestActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
 
-        new EmployeeJava();
+        new EmployeeJava().runTest();
     }
 }
