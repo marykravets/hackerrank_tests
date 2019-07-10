@@ -63,4 +63,49 @@ class UnitTestKotlin {
         val end = System.currentTimeMillis()
         println("kotlin_kotlin time = " + (end - start))
     }
+
+    @Test
+    fun kotlinListEmployeeTest() {
+        var list = arrayListOf<EmployeeKotlin>()
+
+        var start = System.currentTimeMillis()
+
+        var e : EmployeeKotlin
+        for (i in 0..10000) {
+            e = EmployeeKotlin()
+            e.add(i.toString(), "name", "0")
+            list.add(e)
+        }
+
+        var end = System.currentTimeMillis()
+        println("ArrayList<Employee> add time = " + (end - start))
+
+        start = System.currentTimeMillis()
+
+        for (i in 10000..0) {
+            list.removeAt(i)
+        }
+
+        end = System.currentTimeMillis()
+        println("ArrayList<Employee> remove time = " + (end - start))
+    }
+
+    @Test
+    fun kotlinListStringTest() {
+        val n = 1000
+
+        var start = System.currentTimeMillis()
+        for (j in 0..n) {
+            var list = arrayListOf<String>()
+
+            for (i in 0..10000) {
+                list.add("str" + i)
+            }
+
+            list.removeAt(100)
+        }
+
+        var end = System.currentTimeMillis()
+        println("kotlinListStringTest time = " + (end-start))
+    }
 }
