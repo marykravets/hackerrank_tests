@@ -5,7 +5,7 @@
 #include <string>
 
 class EmployeeCpp {
-    public:
+    private:
          std::string id;
          std::string name;
          std::string managerId;
