@@ -1,7 +1,7 @@
 package com.example.test
 
 import android.support.v7.app.AppCompatActivity
-import com.example.test.obj.EmployeeKotlin
+import com.example.test.list.implementation.obj.EmployeeKotlin
 
 class OrgChartTestActivityKt: AppCompatActivity() {
 

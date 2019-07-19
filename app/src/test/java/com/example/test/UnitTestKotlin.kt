@@ -2,8 +2,8 @@ package com.example.test
 
 import org.mockito.Mockito.*
 
-import com.example.test.obj.EmployeeJava
-import com.example.test.obj.EmployeeKotlin
+import com.example.test.list.implementation.obj.EmployeeJava
+import com.example.test.list.implementation.obj.EmployeeKotlin
 import org.junit.Test
 
 class UnitTestKotlin {
