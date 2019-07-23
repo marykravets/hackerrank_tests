@@ -31,7 +31,7 @@ public class TestSolutions {
     }
 
     @Test
-    public void jumpingOnCloudsest() {
+    public void jumpingOnCloudsTest() {
         Solutions mockedObj = mock(Solutions.class);
         int result = mockedObj.jumpingOnClouds(new int[] {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0});
 
@@ -39,7 +39,7 @@ public class TestSolutions {
     }
 
     @Test
-    public void testMapMerge() {
+    public void mapMergeTest() {
 
         Map<Object, Object> mapA = new HashMap<>();
         mapA.put("a", 0);
