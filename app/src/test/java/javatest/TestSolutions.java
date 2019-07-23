@@ -47,7 +47,6 @@ public class TestSolutions {
         mapValue1.put("b1", 1);
         mapA.put("b", mapValue1);
 
-
         Map<Object, Object> mapB = new HashMap<>();
         mapB.put("a", 1);
         Map<Object, Object> mapValue2 = new HashMap<>();
