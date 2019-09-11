@@ -103,6 +103,9 @@ class DropCapView @JvmOverloads constructor(
     }
 
     fun setText( text: String?) {
+        copyTextPaint.isAntiAlias = true
+        dropCapPaint.isAntiAlias = true
+
         if (enoughTextForDropCap(text)) {
             dropCapText = text!!.substring(0, numberOfDropCaps)
             copyText = text.subSequence(dropCapText!!.length, text.length).toString()
